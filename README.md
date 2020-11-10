@@ -8,7 +8,7 @@ Port of [NotifyMe](https://github.com/jakebonk/NotifyMe) for Xamarin.Android.
 
 A Android Library for simple notifications. Very easily set a delay or time when you want the notification to popup. Notification will popup through system reboots.
 
-![Demo](https://thumbs.gfycat.com/DishonestPlushBlacklab-size_restricted.gif)
+<img src="https://thumbs.gfycat.com/DishonestPlushBlacklab-size_restricted.gif" width="200">
 
 ## Setup
 
@@ -20,7 +20,11 @@ TODO
 
 ## Dependencies
 
+Install NuGet to the target Android application project:
+
 * Xamarin.Android.Support.v4
+
+> The native library still uses support libraries instead of AndroidX.
 
 ## Modify AndroidManifest.xml
 
@@ -62,7 +66,7 @@ notifyMe.Color(Int red,Int green,Int blue,Int alpha);//Color of notification hea
 notifyMe.led_color(Int red,Int green,Int blue,Int alpha);//Color of LED when notification pops up
 notifyMe.Time(Calendar time);//The time to popup notification
 notifyMe.Delay(Int delay);//Delay in ms
-notifyMe.large_icon(Int resource);//Icon resource by ID
+notifyMe.Large_icon(Int resource);//Icon resource by ID
 notifyMe.Rrule("FREQ=MINUTELY;INTERVAL=5;COUNT=2")//RRULE for frequency of notification
 notifyMe.AddAction(Intent intent,String text); //The action will call the intent when pressed
 ```
